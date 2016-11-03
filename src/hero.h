@@ -16,6 +16,7 @@ public:
     Hero(int health = default_health, int aForce = default_attackForce)
         :Unit(health, aForce), scores(0)
     {}
+
     void attack (Dragon &drago)
     {
         std::string q = drago.generateQuestion();
@@ -32,6 +33,16 @@ public:
             getDamage(drago.attackForce);
             std::cout << "Hero suffers..." << std::endl;
         }
+    }
+
+    void addScores(const int d_scores)
+    {
+        scores += d_scores;
+    }
+
+    int getScores()
+    {
+        return scores;
     }
 };
 

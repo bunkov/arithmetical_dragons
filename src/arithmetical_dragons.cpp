@@ -20,8 +20,8 @@ list<Dragon*> generateDragonList()
 {
     list<Dragon*> competitors;
     competitors.push_back(new GreenDragon());
-    competitors.push_back(new RedDragon());
-    competitors.push_back(new BlackDragon());
+    //competitors.push_back(new RedDragon());
+    //competitors.push_back(new BlackDragon());
 
     return competitors;
 }
